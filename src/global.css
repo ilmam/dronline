@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+    url(./assets/fonts/English/Inter-Regular-slnt=0.ttf) format('truetype');
+}
+
+/* Transaction styles */
+.transactionItemContainer {
+  display: grid;
+  text-align: center;
+  border-bottom: thin solid #f0f0f0;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 100px 100px 120px;
+}
+
+.transactionItemContainer > div {
+  padding: 15px 0;
+  align-self: center;
+}

@@ -1,0 +1,3 @@
+# REACT_APP prefex is required for all env variables thats how create-react-app works
+REACT_APP_API_LINK = "http://dr-online-api-test.us-east-2.elasticbeanstalk.com"
+REACT_APP_STORAGE_LINK = "aws storage link" 

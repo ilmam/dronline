@@ -1,0 +1,93 @@
+{
+  "name": "dr-online-dr-portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@uppy/core": "^1.13.1",
+    "@uppy/file-input": "^1.4.16",
+    "@uppy/react": "^1.10.5",
+    "@uppy/thumbnail-generator": "^1.6.6",
+    "@uppy/tus": "^1.7.5",
+    "antd": "^4.6.1",
+    "bizcharts": "^4.0.14",
+    "customize-cra": "^1.0.0",
+    "javascript-time-ago": "^2.3.4",
+    "leaflet": "^1.6.0",
+    "lodash": "^4.17.20",
+    "mobx": "^5.15.6",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^6.2.5",
+    "moment": "^2.27.0",
+    "pretty-bytes": "^5.4.1",
+    "qs": "^6.9.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
+    "react-file-input-previews-base64": "^1.0.8",
+    "react-highlight-words": "^0.16.0",
+    "react-leaflet": "^2.7.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-time-ago": "^6.2.2",
+    "suneditor": "^2.32.1",
+    "suneditor-react": "^2.14.4",
+    "superagent": "^6.0.0",
+    "superagent-absolute": "^1.0.1",
+    "uniqid": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "babel-preset-mobx": "^2.0.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "husky": "^4.2.5",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.0",
+    "lint-staged": "^10.2.13",
+    "prettier": "^2.1.1",
+    "react-app-rewired": "^2.1.6"
+  },
+  "scripts": {
+    "start": "npx cross-env SKIP_PREFLIGHT_CHECK=true npx react-app-rewired start",
+    "build": "npx cross-env SKIP_PREFLIGHT_CHECK=true npx react-app-rewired build",
+    "test": "npx react-app-rewired test",
+    "eject": "npx react-app-rewired eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged "
+    }
+  },
+  "lint-staged": {
+    "*.{js,md,css}": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
